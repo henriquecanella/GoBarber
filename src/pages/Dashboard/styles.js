@@ -15,6 +15,7 @@ export const Container = styled.div`
     button {
       border: 0;
       background: none;
+      cursor: pointer;
     }
 
     strong {
