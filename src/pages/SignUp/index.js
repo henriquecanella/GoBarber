@@ -1,7 +1,7 @@
-import React, { useRef, useState, useSelector } from 'react';
-import { Image } from 'react-native';
+import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
+import { Image } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
 
 import logo from '~/assets/logo.png';
 
@@ -66,7 +66,6 @@ export default function SignUp({ navigation }) {
           <FormInput
             icon="lock-outline"
             secureTextEntry
-            autoCapitalize="none"
             placeholder="Sua senha secreta"
             ref={passwordRef}
             returnKeyType="send"
@@ -90,6 +89,6 @@ export default function SignUp({ navigation }) {
 
 SignUp.propTypes = {
   navigation: PropTypes.shape({
-    navigate: PropTypes.func.isRequired,
+    navigate: PropTypes.func,
   }).isRequired,
 };
