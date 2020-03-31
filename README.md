@@ -38,6 +38,7 @@ Faça um clone desse repositório.
 - A partir da raiz do projeto execute o comando: `docker-compose up -d` para montar o ambiente da aplicação;
 - Entre na pasta utilizando o comando a partir da raiz do projeto: `cd backend`;
 - Utilize o comando `yarn` para baixar as dependencias do projeto;
+- Crie um arquivo `.env` e preencha com base nas informações do arquivo `.env.example`
 - Para executar as migrations utilize: `yarn sequelize db:migrate`;
 - Para executar o servidor utilize o comando: `yarn dev`;
 - Para executar os background jobs utilize o comando: `yarn queue`;
